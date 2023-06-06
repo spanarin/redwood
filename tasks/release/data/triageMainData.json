@@ -1,0 +1,314 @@
+{
+  "8a0adbc14be91bc053945a8b53eebadf3df2358b": {
+    "message": "chore(ci): use canary version of rwjs vite (#8526)",
+    "needsCherryPick": false
+  },
+  "be371fffac4e0b41c34cea44bb24c4142fed8256": {
+    "message": "fix(vite): Tailwind/postcss optimisation issue (#8471)",
+    "needsCherryPick": false
+  },
+  "3ff5c6b860e17cd21c64d8687aec26bf15609cb4": {
+    "message": "chore(ci): deduplicate yarn cache by removing the `set-up-job` action (#8504)",
+    "needsCherryPick": false
+  },
+  "d818939403c614d9bbe4254fb7d3f5369598afd9": {
+    "message": "feat(ci): isolate smoke tests, introduce caching (#8449)",
+    "needsCherryPick": false
+  },
+  "41346ff637a11c39e010e8b298190b0232fb7e2d": {
+    "message": "fix(cli): Fix plugin loading logic for built-in commands (#8494)",
+    "needsCherryPick": false
+  },
+  "8fb0f8633e69777ab9fbf61490deaf67ca0340f1": {
+    "message": "feat(cli): Lazy install storybook (#8454)",
+    "needsCherryPick": false
+  },
+  "6585d4d5322e4896857f98fdab5f80f6e4d5cc3e": {
+    "message": "Make Vite the default bundler (#8301)",
+    "needsCherryPick": false
+  },
+  "78fb9d19ee05da0af5c5b95e66e84ccce67e510b": {
+    "message": "fix(deps): update storybook monorepo to v7.0.18 (#8431)",
+    "needsCherryPick": false
+  },
+  "4598521e4df67b00d2158e50c379a81190245cc4": {
+    "message": "add temporary v6 step for storybook (#8406)",
+    "needsCherryPick": false
+  },
+  "9753b1d36f781aa9d3551687ee48b50792c65486": {
+    "message": "fix(deps): update storybook monorepo to v7.0.17 (#8413)",
+    "needsCherryPick": false
+  },
+  "1e1d67bbba67e34edba316f5e644ddcf1a6f4733": {
+    "message": "fix(deps): update dependency @types/webpack-env to v1.18.1 (#8412)",
+    "needsCherryPick": false
+  },
+  "70b7c4dc3ce6f54017d6ed52a2745ffeaa63a710": {
+    "message": "Reserve h for help, and format docs (#8407)",
+    "needsCherryPick": false
+  },
+  "18074307f157f393125770d183abdeaa0c10f74a": {
+    "message": "fix(deps): update storybook monorepo to v7.0.15 (#8403)",
+    "needsCherryPick": false
+  },
+  "5f03da5f48eac92bf965f43afd032e618b22788d": {
+    "message": "feat(storybook): upgrade to v7 (#8342)",
+    "needsCherryPick": false
+  },
+  "88e5563efadb41df0c09c019275a872e6fec8326": {
+    "message": "fix(deps): update storybook monorepo to v7.0.20 (#8558)",
+    "needsCherryPick": false
+  },
+  "f1e8a500506099536d250a91acaafbaea22b501a": {
+    "message": "chore(cli-storybook): improve types, style changes (#8555)",
+    "needsCherryPick": false
+  },
+  "f5c139d0c49c8165ddfe743f7a3449858d457d43": {
+    "message": "feature: Support Auth in Fastify GraphQL Server by mimicking Lambda Events and Context (#8533)",
+    "needsCherryPick": false
+  },
+  "65b09e53c326d7582a14435fc06b035cd424e919": {
+    "message": "Move fastify.logger.infos to fastify.logger.traces (#8590)",
+    "needsCherryPick": false
+  },
+  "b4585df2f220506c473660a626baa49430cfe09a": {
+    "message": "Fix the codegen path for the GraphQL context objcet (#8585)",
+    "needsCherryPick": false
+  },
+  "ffaae8b4369775a25dd1d9452dab2d81cc66a66c": {
+    "message": "feat(codemod): Add codemod for js to jsx conversion (#8551)",
+    "needsCherryPick": false
+  },
+  "44dbee9c98c6158b76ec3ca4402b4fbf4dfc620a": {
+    "message": "chore(deps): update dependency supertokens-auth-react to v0.33.1 (#8576)",
+    "needsCherryPick": false
+  },
+  "cd34b8b6bd68834a0529f96b265eb16800407534": {
+    "message": "Update .js files to .jsx (#8537)",
+    "needsCherryPick": false
+  },
+  "3cfb6e301044352c1c057fb6b09491701cf95f66": {
+    "message": "chore(vite): Rename entry-client.tsx to entry.client (#8592)",
+    "needsCherryPick": false
+  },
+  "2f1d4279c98cdfc6ab4d5d992324e532a2f3c477": {
+    "message": "chore(CI): test webpack in the smoke tests (#8604)",
+    "needsCherryPick": false
+  },
+  "3be3691d8c69110b48319753ff93c24887621093": {
+    "message": "chore(ci): use the line reporter for now (#8605)",
+    "needsCherryPick": false
+  },
+  "fd8fbca4fe114c79933d87fd36f862596afe64ae": {
+    "message": "add webpack to e2e (#8602)",
+    "needsCherryPick": false
+  },
+  "addfa20cc9f75114db39af321da924ec8dc27986": {
+    "message": "fix(crwa): fix typo in server.config.js",
+    "needsCherryPick": false
+  },
+  "d934a8e7ad680ce0a266a50e3ebe06de545bfd78": {
+    "message": "feat(apollo): add linkFactory for better customization of apollo links (#8500)",
+    "needsCherryPick": false
+  },
+  "4ea19e25514892fa1b14f31db3eda6a1c8bfe3a3": {
+    "message": "feat(cli): Support experimental server file from `yarn rw dev` (#8623)",
+    "needsCherryPick": false
+  },
+  "1e47d65cb5a7e4225ca650039f93f1d75d6e6ffb": {
+    "message": "fix(vite): list imports before dns call (#8620)",
+    "needsCherryPick": false
+  },
+  "358993aa57e813af269718c94fd083334f1c019a": {
+    "message": "chore(cli-plugins): remove project file from sb command (#8626)",
+    "needsCherryPick": false
+  },
+  "368ea41058bd806a8d12f561a5a59fde69ab0824": {
+    "message": "chore(project-config): Cache results of common functions (#8581)",
+    "needsCherryPick": false
+  },
+  "526c018223128dfdbfe0c759117067a438f5ee5c": {
+    "message": "Rebuild fixture: await copyProject (#8625)",
+    "needsCherryPick": false
+  },
+  "2d10c6e57f24c1ab95b415b2f62256f1a1bffbb2": {
+    "message": "codemod(v6): Convert all process.env usage to dot notation (#8611)",
+    "needsCherryPick": false
+  },
+  "741375536d36f5fff15ba36844e9263416e18d78": {
+    "message": "ESLint rule: process-env-computed (#8612)",
+    "needsCherryPick": false
+  },
+  "f2aad7553439f1f5c4b53c02b996335c582add2a": {
+    "message": "Update command to rebuild test project fixture (#8624)",
+    "needsCherryPick": false
+  },
+  "af7d400af4e902a418c61887350e4fc4c378c0c6": {
+    "message": "chore(deps): update dependency esbuild to v0.18.2 (#8616)",
+    "needsCherryPick": false
+  },
+  "d9797bdc585471e8a9efbd7e59252234f43a4d8e": {
+    "message": "remove setup windicss file and from docs (#8598)",
+    "needsCherryPick": false
+  },
+  "21a53222d054e25733a52e26d8ed6f3b36209330": {
+    "message": "test-project-rebuild (#8516)",
+    "needsCherryPick": false
+  },
+  "0c832547fecd1a949ddb1da38ee846641e941f01": {
+    "message": "fix(vite): Do not use getPaths in vite setup handler (#8610)",
+    "needsCherryPick": false
+  },
+  "a87e8a42cc40f5f253df5f2a79e9708b3ae41fb4": {
+    "message": "chore(cli): Add OpenTelemetry (#8653)",
+    "needsCherryPick": false
+  },
+  "3d49d67d799a0b4a0984b662e2d5916d96d82f67": {
+    "message": "chore(deps): update dependency esbuild to v0.18.6 (#8670)",
+    "needsCherryPick": false
+  },
+  "1ccf6124dde28be3002794a1b38397915fd54af1": {
+    "message": "fix(vite): Change config for mantine and chakra to use export default (#8639)",
+    "needsCherryPick": false
+  },
+  "bd903c5755925ea7174775a2fdaba371b700c910": {
+    "message": "fix(deps): update storybook monorepo to v7.0.22 (#8652)",
+    "needsCherryPick": false
+  },
+  "2e355f3d92f3a017f03fb7991ef0e0e61b7289aa": {
+    "message": "rebuild-test-project-fixture: Hardcode migration time (#8656)",
+    "needsCherryPick": false
+  },
+  "9a7f0b6b137fc9a3163a6167b64464f6f3247df3": {
+    "message": "rebuild-test-project-fixture: Print tmp dir and other output tweaks (#8657)",
+    "needsCherryPick": false
+  },
+  "2384203b9bae80bedfff72a44c73c4d88e0690d9": {
+    "message": "Remove unused global var RWJS_WEB_BUNDLER (#8655)",
+    "needsCherryPick": false
+  },
+  "b2cded5a7f9943fa9b9f77488a728855a5981384": {
+    "message": "regenerate test project fixture: Include @redwoodjs/vite in v6 specific step (#8654)",
+    "needsCherryPick": false
+  },
+  "78c33b2a5bfb4f0b92fbec60cd96c50778c8b993": {
+    "message": "Remove DevFatalErrorPage import when building (#8648)",
+    "needsCherryPick": false
+  },
+  "7fa302653236c1ca291d01364831785a0c027869": {
+    "message": "chore(deps): update dependency esbuild to v0.18.4 (#8646)",
+    "needsCherryPick": false
+  },
+  "11fe31953e0c5b758b94d70277a6ba42948ac782": {
+    "message": "fix(deps): update storybook monorepo to v7.0.21 (#8630)",
+    "needsCherryPick": false
+  },
+  "07f130c57df396d6f60998dd7f76c045101793a5": {
+    "message": "chore(smoke-tests): make smoke tests easier to run locally (#8607)",
+    "needsCherryPick": false
+  },
+  "d987b68aff8deb39dee313a912d80d57f7b3123e": {
+    "message": "chore(lint): Make the eslint error for accessing process.env more human friendly (#8638)",
+    "needsCherryPick": false
+  },
+  "ac8f4f97b75ad4aa897fc1e69c6d896a003adf72": {
+    "message": "chore(deps): update dependency esbuild to v0.18.3 (#8628)",
+    "needsCherryPick": false
+  },
+  "9c74ffe5a04b2f7888626926b9d41cca30af26d2": {
+    "message": "Rename cache file (#8699)",
+    "needsCherryPick": false
+  },
+  "7856e0e722c60c8cfb6e5d3e3c906c8feb843e94": {
+    "message": "chore(rwfw): Add force optimise to vite.config when running project:sync (#8688)",
+    "needsCherryPick": false
+  },
+  "15d5a75c232e1ea9527acfb4472ce361c4103ce9": {
+    "message": "fix(deps): update storybook monorepo to v7.0.23 (#8696)",
+    "needsCherryPick": false
+  },
+  "aae582563214dc791a60f6bf4a9e20578f3d5de6": {
+    "message": "Mark broken gql prerender test as slow (#8687)",
+    "needsCherryPick": false
+  },
+  "db465ce0aab1add96c1506cba255ce1fc9563065": {
+    "message": "Update test-project after Vite doc changes (#8755)",
+    "needsCherryPick": false
+  },
+  "ee2865e0695c232d70173dd68fd752ae4e4b9167": {
+    "message": "feat(firebase-admin): upgrade to v11 (#8305)",
+    "needsCherryPick": false
+  },
+  "aff94ecb69e9806f8f126562b199bedb155a5869": {
+    "message": "chore(vite): Remove unused vite-plugin-commonjs (#8750)",
+    "needsCherryPick": false
+  },
+  "69c675d37d8d25dd64c50b06581cc6ca5b0db5ef": {
+    "message": "Adds deprecation notice if using Vite but have .js files when you should have .jsx (#8712)",
+    "needsCherryPick": false
+  },
+  "bfd65a3571bb3a80ddca0654de5986b3289a2d37": {
+    "message": "fix(deps): update storybook monorepo to v7.0.24 (#8751)",
+    "needsCherryPick": false
+  },
+  "625629bedfa7226269ee9d9e212bcfbc217d944f": {
+    "message": "Remind to setup auth in server file (#8742)",
+    "needsCherryPick": false
+  },
+  "cf4c87b9eaf456c5e873e1bae236b77ecca9a12f": {
+    "message": "Add experimental notice when using dev server with server file (#8723)",
+    "needsCherryPick": false
+  },
+  "25228fb2de41c3060405162869bb2f1a571a5bcd": {
+    "message": "Setup vite: No longer experimental (#8745)",
+    "needsCherryPick": false
+  },
+  "cc550b77a90ee7cb9a071022f1d8f14c04719045": {
+    "message": "Tweak vite setup output (#8740)",
+    "needsCherryPick": false
+  },
+  "8313e52c690ca504e15bf09976ac2c95ce6add8e": {
+    "message": "chore(deps): update dependency esbuild to v0.18.9 (#8736)",
+    "needsCherryPick": false
+  },
+  "fc7364fc7b553565cfb096d3944b8ec31d6e38f8": {
+    "message": "feature: Generate boilerplate to create RedwoodJS Realtime with GraphQL Live Queries or Subscriptions (#8710)",
+    "needsCherryPick": false
+  },
+  "f949ddcb944acf6b95af02c869490a428ea98726": {
+    "message": "v6 codemod: FatalErrorPage (#8713)",
+    "needsCherryPick": false
+  },
+  "1aa8bead5353643d79ed4dc2f73f06f089c55f94": {
+    "message": "docs(vite): Remove references to webpack, and more docs on SVGs and fonts (#8707)",
+    "needsCherryPick": false
+  },
+  "c4ecba853c3c65bb42ad224db061c335a9699720": {
+    "message": "codemod(svgs): Convert imported SVGs to react components (#8564)",
+    "needsCherryPick": false
+  },
+  "619977f54434a7e27d0f653f73c1b13122af9578": {
+    "message": "Use vite unless bundler === webpack (#8731)",
+    "needsCherryPick": false
+  },
+  "95473193c742dcb9bddb33b0c6120ba8b0cf295c": {
+    "message": "chore(vite) Remove invalid comment (#8729)",
+    "needsCherryPick": false
+  },
+  "c9bdd08b2d73569a204788dbbb4a0df8eeb1f87e": {
+    "message": "chore(deps): update dependency esbuild to v0.18.8 (#8727)",
+    "needsCherryPick": false
+  },
+  "c5921bc3db9c55194548e920542fa660238c1aa2": {
+    "message": "fix(fastify): Ensure global context is unique and scoped to an individual request lifetime (#8569)",
+    "needsCherryPick": false
+  },
+  "c920812097afd421360421699bc5e220975699c0": {
+    "message": "chore(deps): update dependency esbuild to v0.18.7 (#8717)",
+    "needsCherryPick": false
+  },
+  "46f7ded9ed737933aef48913a39840bda4fd7a8e": {
+    "message": "chore(deps): update dependency esbuild to v0.18.10 (#8748)",
+    "needsCherryPick": false
+  }
+}
