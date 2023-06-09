@@ -24,7 +24,10 @@ let result = await esbuild.build({
   metafile: true,
 })
 
-fs.writeFileSync('srcMeta.json', JSON.stringify(result.metafile, null, 2))
+fs.writeFileSync(
+  'meta.sourceFiles.json',
+  JSON.stringify(result.metafile, null, 2)
+)
 
 result = await esbuild.build({
   entryPoints: ['./src/bins/up.ts'],
@@ -44,4 +47,4 @@ result = await esbuild.build({
   metafile: true,
 })
 
-fs.writeFileSync('binMeta.json', JSON.stringify(result.metafile, null, 2))
+fs.writeFileSync('meta.bins.json', JSON.stringify(result.metafile, null, 2))

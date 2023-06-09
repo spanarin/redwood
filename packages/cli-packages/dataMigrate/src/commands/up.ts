@@ -1,7 +1,8 @@
 import terminalLink from 'terminal-link'
 import type { Argv } from 'yargs'
 
-import { getPaths } from '../lib/project'
+import { getPaths } from '@redwoodjs/project-config'
+
 import { DataMigrateUpYargsOptions } from '../types'
 
 export const command = 'up'

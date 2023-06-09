@@ -15,15 +15,10 @@
   "scripts": {
     "build": "yarn node ./build.mjs && yarn build:types",
     "build:types": "tsc --build --verbose",
-    "build:watch": "nodemon --watch src --ext \"js,ts,tsx\" --ignore dist --exec \"yarn build\"",
+    "build:watch": "nodemon --watch src --ext \"ts\" --ignore dist --exec \"yarn build\"",
     "depsDist": "yarn deps:dist",
     "depsSrc": "yarn deps:src",
-    "prepublishOnly": "NODE_ENV=production yarn build"
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "/dist/"
-    ]
+    "prepack": "NODE_ENV=production yarn build"
   },
   "dependencies": {
     "@redwoodjs/project-config": "5.0.0",
@@ -34,7 +29,6 @@
     "@storybook/react-webpack5": "7.0.20",
     "chalk": "4.1.2",
     "execa": "5.1.1",
-    "lodash.memoize": "4.1.2",
     "storybook": "7.0.20",
     "terminal-link": "2.1.1",
     "yargs": "17.7.2"
@@ -43,7 +37,6 @@
     "@types/yargs": "17.0.24",
     "esbuild": "0.17.19",
     "fast-glob": "3.2.12",
-    "jest": "29.5.0",
     "typescript": "5.1.3"
   },
   "gitHead": "3905ed045508b861b495f8d5630d76c7a157d8f1"

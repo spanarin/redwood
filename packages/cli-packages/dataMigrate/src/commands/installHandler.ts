@@ -4,10 +4,10 @@ import execa from 'execa'
 import fs from 'fs-extra'
 import { Listr } from 'listr2'
 
+import { getPaths } from '@redwoodjs/project-config'
 import { errorTelemetry } from '@redwoodjs/telemetry'
 
 import c from '../lib/colors'
-import { getPaths } from '../lib/project'
 
 export async function handler() {
   const redwoodProjectPaths = getPaths()

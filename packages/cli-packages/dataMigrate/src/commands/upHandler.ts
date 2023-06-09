@@ -5,19 +5,19 @@ import type { PrismaClient } from '@prisma/client'
 import { Listr } from 'listr2'
 
 import { registerApiSideBabelHook } from '@redwoodjs/internal/dist/build/babel/api'
+import { getPaths } from '@redwoodjs/project-config'
 import { errorTelemetry } from '@redwoodjs/telemetry'
 
 import c from '../lib/colors'
-import { getPaths } from '../lib/project'
 import { DataMigrateUpYargsOptions } from '../types'
 
-const redwoodProjectPaths = getPaths()
+let redwoodProjectPaths: ReturnType<typeof getPaths>
 
-type DataMigration = {
-  version: string
-  name: string
-  startedAt: Date
-  finishedAt: Date
+try {
+  redwoodProjectPaths = getPaths()
+} catch (e) {
+  console.error(c.error((e as Error).message))
+  process.exit(1)
 }
 
 /**
@@ -253,4 +253,11 @@ function reportDataMigrations(counters: {
       )
     )
   }
+}
+
+type DataMigration = {
+  version: string
+  name: string
+  startedAt: Date
+  finishedAt: Date
 }

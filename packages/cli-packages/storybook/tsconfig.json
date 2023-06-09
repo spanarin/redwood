@@ -1,10 +1,10 @@
 {
   "extends": "../../../tsconfig.compilerOption.json",
   "compilerOptions": {
+    "emitDeclarationOnly": false,
+    "noEmit": true,
     "baseUrl": ".",
     "rootDir": "src",
-    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",
-    "outDir": "dist"
   },
   "include": ["src"],
 }
