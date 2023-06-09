@@ -116,7 +116,6 @@ export async function handler({
   })
 
   const tasks = new Listr(dataMigrationTasks, {
-    rendererOptions: { collapseSubtasks: false },
     renderer: 'verbose',
   })
 
