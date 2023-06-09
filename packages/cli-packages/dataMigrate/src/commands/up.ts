@@ -31,7 +31,9 @@ export function builder(yargs: Argv): Argv {
     )
 }
 
-export async function handler(options: DataMigrateUpYargsOptions) {
+export async function handler(
+  options: DataMigrateUpYargsOptions
+): Promise<void> {
   const { handler: dataMigrateUpHandler } = await import('./upHandler.js')
-  return dataMigrateUpHandler(options)
+  await dataMigrateUpHandler(options)
 }
