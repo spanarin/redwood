@@ -33,6 +33,10 @@ result = await esbuild.build({
   entryPoints: ['./src/bins/up.ts'],
   outdir: 'dist/bins',
 
+  banner: {
+    js: '#!/usr/bin/env node',
+  },
+
   bundle: true,
   minify: true,
 
