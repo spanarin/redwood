@@ -18,7 +18,7 @@ export async function handler() {
         title: `Creating the dataMigrations directory...`,
         task() {
           fs.outputFileSync(
-            path.join(getPaths().api.dataMigrations, '.keep'),
+            path.join(redwoodProjectPaths.api.dataMigrations, '.keep'),
             ''
           )
         },
