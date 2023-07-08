@@ -63,6 +63,9 @@ RUN yarn rw build web
 # ------------------------------------------------
 FROM node:18-slim as serve_api
 
+RUN apt-get update || : && apt-get install -y \
+    openssl
+
 # -> should we set this earlier?
 ENV NODE_ENV production
 
