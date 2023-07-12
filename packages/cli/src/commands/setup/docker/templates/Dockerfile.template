@@ -41,14 +41,16 @@ FROM base as api_build
 COPY api api
 # -> reasons to avoid yarn here? And do `./node_modules/.bin/rw build api` instead?
 # -> Josh has `ENTRYPOINT [ "/bin/sh", "-c", "yarn rw build api" ]` here instead of `RUN`. pros cons?
-RUN yarn rw build api
+# RUN yarn rw build api
+RUN node_modules/.bin/redwood build api
 
 # web build
 # ------------------------------------------------
 FROM base as web_build
 
 COPY web web
-RUN yarn rw build web --no-prerender
+# RUN yarn rw build web --no-prerender
+RUN node_modules/.bin/redwood build web --no-prerender
 
 # web prerender build
 # -> to prerender web, we need the api side and the database
@@ -57,7 +59,8 @@ RUN yarn rw build web --no-prerender
 FROM api_build as web_prerender_build
 
 COPY web web
-RUN yarn rw build web
+# RUN yarn rw build web
+RUN node_modules/.bin/redwood build web
 
 # serve api
 # ------------------------------------------------
@@ -77,7 +80,7 @@ COPY .yarn/plugins .yarn/plugins
 COPY api/package.json .
 COPY yarn.lock yarn.lock
 
-COPY --from=api_build /root/.yarn/berry/cache /root/.yarn/berry/cache
+# COPY --from=api_build /root/.yarn/berry/cache /root/.yarn/berry/cache
 COPY --from=api_build /root/.cache /root/.cache
 COPY --from=api_build /app/node_modules /app/node_modules
 
@@ -103,11 +106,22 @@ CMD [ "node_modules/.bin/rw-server", "api" ]
 # ------------------------------------------------
 FROM serve_api as serve_web
 
-ENV API_HOST http://api:8911
+ENV API_HOST=http://api:8911
 
 COPY --from=web_build /app/web/dist /app/web/dist
 
-#CMD ["yarn", "rw-server"]
-CMD [ "node_modules/.bin/rw-server", "web", "--apiHost ${API_HOST}"]
+CMD "node_modules/.bin/rw-server" "web" "--apiHost" $API_HOST
 
 # CMD yarn rw serve web --apiHost ${API_HOST}
+
+
+# console
+# ------------------------------------------------
+FROM base as console
+
+RUN apt-get update || : && apt-get install -y \
+    curl
+
+COPY api api
+COPY web web
+COPY scripts scripts

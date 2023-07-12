@@ -1,6 +1,17 @@
 version: "3.8"
 
+# NOTE (JGMW): See the package.json on Brendan's PR for the scripts that can be helpful
+
+# Testing inside console:
+# curl -G -v "http://api:8911/graphql" --data-urlencode "query={redwood{version}}" -w "\n"
+# curl -G -v "http://web:8910/" --data-urlencode "query={redwood{version}}" -w "\n"
+
 services:
+  # Console notes:
+  #  - Might not want to include by default
+  #  - Can be useful to run commands without having all the dependencies installed locally
+  #  - Can run using `docker compose run --rm console /bin/bash`
+  #
   # This builds the base container. Useful for a 'console' to debug things with
   console:
     # we have to be root to share folders into the container, but if you're debugging
@@ -9,10 +20,13 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-      target: web_build
+      target: console
     tmpfs:
       - /tmp
     command: "true"
+    environment:
+      - DATABASE_URL=postgresql://redwood:redwood@db:5432/redwood
+      - TEST_DATABASE_URL=postgresql://redwood:redwood@db:5432/redwood_test
 
   # Redwood API
   api:
@@ -28,6 +42,7 @@ services:
     environment:
       - DATABASE_URL=postgresql://redwood:redwood@db:5432/redwood
       - TEST_DATABASE_URL=postgresql://redwood:redwood@db:5432/redwood_test
+      - SESSION_SECRET=super_secret_session_key_change_me_in_production_please
 
   # Redwood Web
   web:
