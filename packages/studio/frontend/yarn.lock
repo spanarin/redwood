@@ -621,6 +621,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iarna/toml@npm:2.2.5":
+  version: 2.2.5
+  resolution: "@iarna/toml@npm:2.2.5"
+  checksum: d095381ad4554aca233b7cf5a91f243ef619e5e15efd3157bc640feac320545450d14b394aebbf6f02a2047437ced778ae598d5879a995441ab7b6c0b2c2f201
+  languageName: node
+  linkType: hard
+
 "@jridgewell/gen-mapping@npm:^0.3.0, @jridgewell/gen-mapping@npm:^0.3.2":
   version: 0.3.3
   resolution: "@jridgewell/gen-mapping@npm:0.3.3"
@@ -1189,6 +1196,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@redwoodjs/project-config@npm:6.0.3":
+  version: 6.0.3
+  resolution: "@redwoodjs/project-config@npm:6.0.3"
+  dependencies:
+    "@iarna/toml": 2.2.5
+    deepmerge: 4.3.1
+    fast-glob: 3.2.12
+    string-env-interpolation: 1.0.1
+  checksum: f0a8f3f66f424a94b0ae80355c0fb86ea21c2b5d130a23a256e43a1388733ed3fed30d5598bd57a2aa1efd1e3bce02c5ba43d2892dc067b35bf500b73af45a01
+  languageName: node
+  linkType: hard
+
 "@remix-run/router@npm:1.3.2":
   version: 1.3.2
   resolution: "@remix-run/router@npm:1.3.2"
@@ -1683,7 +1702,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer@npm:^6.0.3":
+"buffer@npm:6.0.3":
   version: 6.0.3
   resolution: "buffer@npm:6.0.3"
   dependencies:
@@ -2134,6 +2153,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"deepmerge@npm:4.3.1":
+  version: 4.3.1
+  resolution: "deepmerge@npm:4.3.1"
+  checksum: e53481aaf1aa2c4082b5342be6b6d8ad9dfe387bc92ce197a66dea08bd4265904a087e75e464f14d1347cf2ac8afe1e4c16b266e0561cc5df29382d3c5f80044
+  languageName: node
+  linkType: hard
+
 "delegates@npm:^1.0.0":
   version: 1.0.0
   resolution: "delegates@npm:1.0.0"
@@ -2337,7 +2363,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.12":
+"fast-glob@npm:3.2.12, fast-glob@npm:^3.2.12":
   version: 3.2.12
   resolution: "fast-glob@npm:3.2.12"
   dependencies:
@@ -2397,6 +2423,7 @@ __metadata:
     "@nivo/core": 0.83.0
     "@nivo/tooltip": 0.83.0
     "@nivo/treemap": 0.83.0
+    "@redwoodjs/project-config": 6.0.3
     "@tailwindcss/forms": 0.5.3
     "@tremor/react": 3.4.1
     "@types/react": 18.2.14
@@ -2404,7 +2431,7 @@ __metadata:
     "@types/react-grid-layout": 1
     "@vitejs/plugin-react": 4.0.3
     autoprefixer: 10.4.14
-    buffer: ^6.0.3
+    buffer: 6.0.3
     graphiql: 2.4.7
     graphql: 16.7.1
     graphql-scalars: 1.22.2
@@ -3460,7 +3487,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.27, postcss@npm:^8.4.26":
+"postcss@npm:8.4.27, postcss@npm:^8.4.23, postcss@npm:^8.4.26":
   version: 8.4.27
   resolution: "postcss@npm:8.4.27"
   dependencies:
@@ -3468,17 +3495,6 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 41a0476e05cb97514ff8d75e4ff9fdcf778f22b2e0d25b7028f219cd408e01d3c4f50459d4a1cd9a430d8ef08202c881374a4fa4ea6009f4a135a07315d606e5
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.4.23":
-  version: 8.4.25
-  resolution: "postcss@npm:8.4.25"
-  dependencies:
-    nanoid: ^3.3.6
-    picocolors: ^1.0.0
-    source-map-js: ^1.0.2
-  checksum: aa2143cb5ed6eef6cb1d38236f158c5fe11bfd1f338c930cf4901f09586874e05fa006e3fd329ca51c61202c7e90d0705379e6310251c9311116e65cb6a08c18
   languageName: node
   linkType: hard
 
@@ -4093,6 +4109,13 @@ __metadata:
   dependencies:
     minipass: ^3.1.1
   checksum: c5d153ce03b5980d683ecaa4d805f6a03d8dc545736213803e168a1907650c46c08a4e5ce6d670a0205482b35c35713d9d286d9133bdd79853a406e22ad81f04
+  languageName: node
+  linkType: hard
+
+"string-env-interpolation@npm:1.0.1":
+  version: 1.0.1
+  resolution: "string-env-interpolation@npm:1.0.1"
+  checksum: 410046e621e71678e71816377d799b40ba88d236708c0ad015114137fa3575f1b3cf14bfd63ec5eaa35ea43ac582308e60a8e1a3839a10f475b8db73470105bc
   languageName: node
   linkType: hard
 
